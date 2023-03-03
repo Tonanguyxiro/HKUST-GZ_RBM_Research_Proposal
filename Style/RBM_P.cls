@@ -48,6 +48,7 @@
 \usepackage{times}
 \usepackage{tabularx}
 \usepackage{fancyhdr}
+\usepackage{pbox}
 
 
 
@@ -797,8 +798,12 @@
 \setlength\fboxrule{.5\p@}
 
 
+% \newcommand{\wideunderline}[2][2em]{%
+%   \underline{\makebox[\ifdim\width>#1\width\else#1\fi]{#2}}%
+% }
+
 \newcommand{\wideunderline}[2][2em]{%
-  \underline{\makebox[\ifdim\width>#1\width\else#1\fi]{#2}}%
+  \underline{\parbox[t]{#1}{\centering{#2}}}%
 }
 
 \newcommand\affiliation[1]{\gdef\@affiliation{\let\aff\aff@inst#1}}
