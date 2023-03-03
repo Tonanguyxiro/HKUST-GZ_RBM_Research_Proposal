@@ -7,5 +7,14 @@
 3. Start your writing at `RBM_Proposal_Template.tex`.
 
 
+## Use it on Overleaf
+
+In `menu`, change LaTex compiler to LaTex.
+
+![](README.image/overleaf_menu.jpg)
+
+![](README.image/change_complier.jpg)
+
+
 
  
