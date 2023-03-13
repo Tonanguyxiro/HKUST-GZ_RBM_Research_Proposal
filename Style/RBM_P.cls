@@ -326,7 +326,7 @@
   \@startsection{subsection}{2}{\z@}
     {6\p@ \@plus 1\p@ \@minus 1\p@}
     {6\p@}
-    {\normalfont\ArticleSize\bfseries\@raggedright}%
+    {\normalfont\ArticleSize\ifflm@rapids\normalsize\fi\fontswitch\bfseries\@raggedright}%
 }
 
 \newcommand\subsubsection{%
@@ -417,8 +417,8 @@
 \newcounter {paragraph}[subsubsection]
 \renewcommand\thepart          {\@arabic\c@part}
 \renewcommand\thesection       {\@arabic\c@section}
-\renewcommand\thesubsection    {\thesection.\@arabic\c@subsection}
-\renewcommand\thesubsubsection {\thesubsection.\@arabic\c@subsubsection}
+\renewcommand\thesubsection    {\bfseries\thesection.\@arabic\c@subsection}
+\renewcommand\thesubsubsection {\thesection.\@arabic\c@subsection.\@arabic\c@subsubsection}
 \renewcommand\theparagraph     {\thesubsubsection.\@arabic\c@paragraph}
 
 \newlength\@indentskip
