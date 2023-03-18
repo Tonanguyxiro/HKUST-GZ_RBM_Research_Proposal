@@ -1,0 +1,16 @@
+@inproceedings{jiangFastParallelBayesian2022a,
+  title = {Fast {{Parallel Bayesian Network Structure Learning}}},
+  booktitle = {2022 {{IEEE International Parallel}} and {{Distributed Processing Symposium}} ({{IPDPS}})},
+  author = {Jiang, Jiantong and Wen, Zeyi and Mian, Ajmal},
+  year = {2022},
+  month = may,
+  eprint = {2212.04259},
+  primaryclass = {cs},
+  pages = {617--627},
+  doi = {10.1109/IPDPS53621.2022.00066},
+  urldate = {2022-12-19},
+  abstract = {Bayesian networks (BNs) are a widely used graphical model in machine learning for representing knowledge with uncertainty. The mainstream BN structure learning methods require performing a large number of conditional independence (CI) tests. The learning process is very time-consuming, especially for high-dimensional problems, which hinders the adoption of BNs to more applications. Existing works attempt to accelerate the learning process with parallelism, but face issues including load unbalancing, costly atomic operations and dominant parallel overhead. In this paper, we propose a fast solution named Fast-BNS on multi-core CPUs to enhance the efficiency of the BN structure learning. Fast-BNS is powered by a series of efficiency optimizations including (i) designing a dynamic work pool to monitor the processing of edges and to better schedule the workloads among threads, (ii) grouping the CI tests of the edges with the same endpoints to reduce the number of unnecessary CI tests, (iii) using a cache-friendly data storage to improve the memory efficiency, and (iv) generating the conditioning sets on-the-fly to avoid extra memory consumption. A comprehensive experimental study shows that the sequential version of Fast-BNS is up to 50 times faster than its counterpart, and the parallel version of Fast-BNS achieves 4.8 to 24.5 times speedup over the state-of-the-art multi-threaded solution. Moreover, Fast-BNS has a good scalability to the network size as well as sample size. Fast-BNS source code is freely available at https://github.com/jjiantong/FastBN.},
+  archiveprefix = {arxiv},
+  keywords = {👍,Computer Science - Artificial Intelligence,Computer Science - Distributed; Parallel; and Cluster Computing,Computer Science - Machine Learning},
+  file = {/Users/tongyuan/Zotero/storage/PEDBV5G9/Jiang et al. - 2022 - Fast Parallel Bayesian Network Structure Learning.pdf;/Users/tongyuan/Zotero/storage/NYPA4UYD/2212.html}
+}
