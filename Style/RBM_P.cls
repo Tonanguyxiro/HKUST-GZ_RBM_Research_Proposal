@@ -112,13 +112,13 @@
   \fi
 }
 
-\AtBeginDocument{%
-  \@ifpackageloaded{natbib}
-    {\bibpunct{(}{)}{;}{a}{}{,}%
-     \global\let\thebibliography\jppthebib
-     \global\let\endthebibliography\jppendthebib}
-    {\relax}%
-}
+% \AtBeginDocument{%
+%   \@ifpackageloaded{natbib}
+%     {\bibpunct{(}{)}{;}{a}{}{,}%
+%      \global\let\thebibliography\jppthebib
+%      \global\let\endthebibliography\jppendthebib}
+%     {\relax}%
+% }
 
 \ifCUPmtlplainloaded
   \AtBeginDocument{%
