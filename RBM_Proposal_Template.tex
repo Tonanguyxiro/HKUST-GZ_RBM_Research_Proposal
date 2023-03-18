@@ -18,9 +18,10 @@
 \usepackage{amsmath}
 \usepackage{setspace}
 \usepackage[a4paper, left=25mm, right=25mm, top=30mm, bottom=30mm]{geometry}
-\usepackage[style=ieee]{biblatex}
+% \usepackage[style=ieee]{biblatex}
+\usepackage[square, comma, sort&compress, numbers]{natbib}
 
-\bibliography{reference/reference.bib}
+\bibliographystyle{IEEEtran}
 
 \newtheorem{lemma}{Lemma}
 \newtheorem{corollary}{Corollary}
@@ -385,13 +386,13 @@ This appendix contains sample equations in the JPP style. Please refer to the {\
 % susie put cite commands here, don't bother with citet etc just yet.
 
 % \bibliographystyle{jpp}
-% \bibliographystyle{IEEEtran}
 % Note the spaces between the initials
 
 
 
 % \bibliography{jpp-instructions}
-\printbibliography
+% \printbibliography
+\bibliography{reference/reference}
 
 
 \end{document}
