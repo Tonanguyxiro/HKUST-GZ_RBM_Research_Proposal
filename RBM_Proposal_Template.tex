@@ -8,21 +8,9 @@
 %   (based on JFMsampl.tex v1.3 for LaTeX2.09)
 % Copyright (C) 1996, 1997, 2014, 2017 Cambridge University Press
 
-\documentclass[12pt]{Style/RBM_P}
-\usepackage{graphicx}
-% \usepackage{epstopdf, epsfig}
+\documentclass[12pt, a4paper]{article}
+\input{Style/RBM_Thesis_Style.tex}
 
-
-\usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc}
-\usepackage{amsmath}
-\usepackage{setspace}
-\usepackage[a4paper, left=25mm, right=25mm, top=30mm, bottom=30mm]{geometry}
-
-% \usepackage[square, comma, sort&compress, numbers]{natbib}
-% \bibliographystyle{IEEEtran}
-
-\usepackage[style=ieee]{biblatex}
 \bibliography{reference/reference.bib}
 
 \newtheorem{lemma}{Lemma}
@@ -37,14 +25,53 @@
 \input{title_page}
 \spacing{1.5}
 
-\maketitle
+\section{Sample section}
+
+\subsection{Sample subsection}
+
+\subsubsection{Sample subsubsection}
 
 
-\begin{abstract}
-\textbf{Abstract: } This file contains instructions for authors planning to submit \textit{Thesis Proposal for Red Bird Mphil}. These instructions were generated in {\LaTeX} according to the instruction provided by RBM, so the {\LaTeX} source file can be used as a template for submissions. The present paragraph appears in the \verb|abstract| environment. All papers should feature a single-paragraph abstract of no more than 250 words, which provides a summary of the main aims and results.
-\end{abstract}
+\section{Figures}
+Figures should be as small as possible while displaying clearly all the information required, and with all lettering readable. Every effort should be taken to avoid figures that run over more than one page. There is no charge for colour figures. For review purposes figures should be embedded within the manuscript. Upon final acceptance, however, individual figure files will be required for production. These should be submitted in EPS or high-resolution TIFF format (1200 dpi for lines, 300 dpi for halftone, and 600 dpi for a mixture of lines and halftone). The minimum acceptable width of any line is 0.5pt. Each figure should be accompanied by a single caption, to appear beneath, and must be cited in the text. Figures should appear in the order in which they are first mentioned in the text and figure files must be named accordingly to assist the production process (and numbering of figures should continue through any appendices). For example see figures \ref{fig:ka} and \ref{fig:kd}. Failure to follow figure guidelines may result in a request for resupply and a subsequent delay in the production process.
 
-\input{Style/instruction.tex}
+\begin{figure}[htbp]
+  \centering
+  \includegraphics{image/trapped.eps}% Images in 100% size
+  \caption{Trapped-mode wavenumbers, $kd$, plotted against $a/d$ for
+    three ellipses:\protect\\%
+    ---$\!$---,
+    $b/a=1$; $\cdots$\,$\cdots$, $b/a=1.5$.}
+\label{fig:ka}
+\end{figure}
+
+\begin{figure}
+  \centering
+  \includegraphics{image/modes}
+  \caption{The features of the four possible modes corresponding to
+  (\textit{a}) periodic\protect\\ and (\textit{b}) half-periodic solutions.}
+\label{fig:kd}
+\end{figure}
+
+\subsection{Tables}
+Tables, however small, must be numbered sequentially in the order in which they are mentioned in the text. The word \textit {table} is only capitalized at the start of a sentence. See table \ref{tab:kd} for an example.
+
+\begin{table}
+  
+  \begin{center}
+\def~{\hphantom{0}}
+  \begin{tabular}{lccc}
+      $a/d$  & $M=4$   &   $M=8$ & Callan \\[3pt]
+       0.1   & 1.56905 & ~~1.56~ & 1.56904\\
+       0.3   & 1.50484 & ~~1.504 & 1.50484\\
+       0.55  & 1.39128 & ~~1.391 & 1.39131\\
+       0.7   & 1.32281 & ~10.322 & 1.32288\\
+       0.913 & 1.34479 & 100.351 & 1.35185\\
+  \end{tabular}
+  \caption{Values of $kd$ at which trapped modes occur when $\rho(\theta)=a$}
+  \label{tab:kd}
+  \end{center}
+\end{table}
 
 \section{Citations and references}
 
