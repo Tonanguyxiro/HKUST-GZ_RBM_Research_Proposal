@@ -1,0 +1,90 @@
+\usepackage{graphicx}
+% \usepackage{epstopdf, epsfig}
+
+\usepackage{graphicx}
+\usepackage{times}
+\usepackage{tabularx}
+\usepackage{fancyhdr}
+\usepackage{pbox}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{setspace}
+\usepackage[a4paper, left=25mm, right=25mm, top=30mm, bottom=30mm]{geometry}
+\usepackage{titlesec}
+
+% \usepackage[square, comma, sort&compress, numbers]{natbib}
+% \bibliographystyle{IEEEtran}
+% \usepackage{cite}
+\usepackage[style=ieee]{biblatex}
+
+
+
+\newcommand{\wideunderline}[2][2em]{%
+  \underline{\parbox[t]{#1}{\centering{#2}}}%
+}
+
+% \renewcommand\footnotesize{\small}
+% \newcommand\indexsize{\@setfontsize\indexsize\@viiipt\@ixpt}
+% \renewcommand\scriptsize{\@setfontsize\scriptsize\@viipt\@viiipt}
+% \renewcommand\tiny{\@setfontsize\tiny\@vpt\@vipt}
+% \renewcommand\large{\@setfontsize\large\@xipt{13}}
+% \renewcommand\Large{\@setfontsize\Large\@xivpt{18}}
+% \renewcommand\LARGE{\@setfontsize\LARGE\@xviipt{19}}
+% \renewcommand\huge{\@setfontsize\huge\@xxpt{25}}
+% \renewcommand\Huge{\@setfontsize\Huge\@xxvpt{30}}
+
+\newcommand\SectionSize{\@setfontsize\SectionSize{15}{22.5}}
+\newcommand\ArticleSize{\@setfontsize\ArticleSize{14}{21}}
+\newcommand\ItemSize{\@setfontsize\ItemSize{12}{18}}
+
+\titleformat{\section}
+  {\normalfont\fontsize{15}{22.5}\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}
+  {\normalfont\fontsize{14}{21}\bfseries}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}
+  {\normalfont\fontsize{12}{18}\bfseries}{\thesubsubsection}{1em}{}
+
+% \def\@maketitle{%
+%   \newpage
+%   \null
+%   \vskip 2em%
+%   \begin{center}%
+%     \LARGE \@title \par
+%   \end{center}%
+%   \par
+%   \vskip 1.5em}
+
+
+% \redef\@maketitle#1{%
+%  \newpage
+%  \vspace*{10\p@}%
+%  {\centering \sloppy
+%   {\normalfont\LARGE\fontswitch\bfseries
+%   \put@rapidsHead%
+%   \@title@alignment%
+%   \@title \par}%
+%   \vskip 8\p@ \@plus 2\p@ \@minus 1\p@
+%   {\normalfont\large\fontswitch\bfseries\baselineskip=12\p@
+%      \@author@alignment%
+%      \lowercase{\@author}\par}%
+%   \vskip 4\p@ \@plus 1\p@
+%   {\normalfont\small
+%   \@aff@alignment%
+%   \@affiliation \par}%
+%   \vskip 8\p@ \@plus 2\p@ \@minus 1\p@
+%   %{\normalfont\small (Received \@date)}% x@rem
+%   \normalfont\small
+%   \@history@alignment%
+%   % (Received xx; revised xx; accepted xx)\hfill% x@add
+%   \put@absrule
+%  \par}%
+%  \vskip 8\p@ \@plus 2\p@ \@minus 1\p@
+% }
+
+% \renewenvironment{abstract}
+%   {\par\normalfont\normalsize\noindent\ignorespaces}
+%   {\par\vskip 9\p@ \@plus 1\p@ \@minus 1\p@
+% %   \vbox{\centerline{\rule[4\p@]{30pc}{.4\p@}}}
+% }
+
