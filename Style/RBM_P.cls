@@ -49,7 +49,12 @@
 \usepackage{tabularx}
 \usepackage{fancyhdr}
 \usepackage{pbox}
+\usepackage{datetime}
 
+\newdateformat{monthyeardate}{%
+  \THEMONTH/\THEYEAR}
+% \newdateformat{monthyeardate}{%
+%   \monthname[\THEMONTH], \THEYEAR}
 
 
 \newif\ifNAT@numbers\NAT@numbersfalse
