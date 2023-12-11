@@ -12,7 +12,7 @@
         \vspace{3cm}
         
         \begin{minipage}{0.8\textwidth}
-            \large
+            \Large
             \centering
 
             \begin{tabular}{l@{}ll}
@@ -30,9 +30,10 @@
 
         \vfill
 
-        \small
+        \normalsize
         
-        \monthyeardate\today % style line 17
+        \renewcommand{\monthyeardate}{\ifcase \month \or 1\or 2\or 3\or %
+        4\or 5 \or 6\or 7\or 8\or 9\or 10\or 11\or 12\fi/\number \year} \monthyeardate
         
         \text{The Hong Kong University of Science and Technology (Guangzhou)} 
 
