@@ -4,10 +4,10 @@
         \vspace*{1cm}
 
         \huge
-        \textbf{HKUST (GZ)}
+        % \textbf{HKUST (GZ)}
         \vspace{0.5cm}
 
-        \textbf{Master Thesis Proposal for MPhil Degree}
+        \textbf{Thesis Proposal for MPhil Degree}
 
         \vspace{3cm}
         
@@ -16,26 +16,28 @@
             \centering
 
             \begin{tabular}{l@{}ll}
-                \textbf{Student Name}\vspace{0.5cm} &     & \wideunderline[18em]{\StudentName} \\
-                \textbf{ID Number}\vspace{0.5cm} &     & \wideunderline[18em]{\StudentID} \\
-                \textbf{Email}\vspace{1.5cm} &     & \wideunderline[18em]{\Email} \\
-                \textbf{Group Project}\vspace{0.5cm} &     & \wideunderline[18em]{{\GroupProjectTitle}} \\ 
-                \textbf{Project Mentor}\vspace{1.5cm} &     & \wideunderline[18em]{\ProjectMentor} \\
-                \textbf{Individual Project}\vspace{0.5cm}&     & \wideunderline[18em]{{\IndividualProjectTitle}}  \\
-                \textbf{Prime Supervisor}\vspace{0.2cm} &     & \wideunderline[18em]{{\PrimeSupervisor}}  \\
-                \textbf{Hub/Thrust}\vspace{0.5cm} &     & \wideunderline[18em]{\HubThrustPrime} \\
-                \textbf{Co-supervisor}\vspace{0.2cm} &     & \wideunderline[18em]{\CoSupervisor} \\
-                \textbf{Hub/Thrust} &     & \wideunderline[18em]{\HubThrustCo} \\
+                \textbf{Student Name}\vspace{0.5cm} &     & \wideunderline[16em]{\StudentName} \\
+                \textbf{ID Number}\vspace{0.5cm} &     & \wideunderline[16em]{\StudentID} \\
+                \textbf{Group Project}\vspace{0.5cm} &     & \wideunderline[16em]{{\GroupProjectTitle}} \\ 
+                \textbf{Project Manager}\vspace{0.5cm} &     & \wideunderline[16em]{\ProjectManager} \\
+                \textbf{Project Supervisor}\vspace{0.5cm} &     & \wideunderline[16em]{\ProjectSupervisor} \\
+                \textbf{Individual Project}\vspace{0.5cm}&     & \wideunderline[16em]{{\IndividualProjectTitle}}  \\
+                \textbf{Thesis Supervisor(s)}\vspace{0.5cm} &     & \wideunderline[16em]{{\Supervisor}}  \\
+                \textbf{Student's Thrust \& Hub}\vspace{0.5cm} &     & \wideunderline[16em]{\StuThrustHub} \\
             \end{tabular}
 
         \end{minipage}
 
-        
-        
         \vfill
+
+        \normalsize
         
-        \LARGE
-        \textbf{Division of the RBM} 
-             
+        \newdateformat{monthyeardate}{%
+        \THEMONTH/\THEYEAR}
+        \renewcommand{\monthyeardate}{\ifcase \month \or 1\or 2\or 3\or %
+        4\or 5 \or 6\or 7\or 8\or 9\or 10\or 11\or 12\fi/\number \year} \monthyeardate
+        
+        \text{The Hong Kong University of Science and Technology (Guangzhou)} 
+
     \end{center}
- \end{titlepage}
+\end{titlepage}
