@@ -6,6 +6,8 @@
 2. Add you info to `personal_info.tex`.
 3. Start your writing at `RBM_Proposal_Template.tex`.
 
+**Important**: If you want to directly clone, switch to article branch.
+
 
 ## Use it on Overleaf
 
