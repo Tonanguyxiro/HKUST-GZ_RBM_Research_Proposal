@@ -1,4 +1,4 @@
-# HKUST-GZR BM Research Proposal
+# HKUST-GZ RBM Research Proposal
 
 ## Quick Start
 
